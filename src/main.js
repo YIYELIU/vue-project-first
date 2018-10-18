@@ -6,7 +6,15 @@ import router from './router'
 
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
+
+import { Swipe, SwipeItem } from 'mint-ui'
+Vue.component(Swipe.name, Swipe)
+Vue.component(SwipeItem.name, SwipeItem)
+
 Vue.use(MintUI)
+
+import VueResource from 'vue-resource'
+Vue.use(VueResource)
 
 /* eslint-disable */
 import './assets/mui/css/mui.min.css'

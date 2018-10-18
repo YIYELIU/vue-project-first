@@ -19,7 +19,7 @@
         </router-link>
         <router-link class="mui-tab-item" to="/shopcart">
           <span class="mui-icon mui-icon-extra mui-icon-extra-cart">
-            <span class="mui-badge">9</span>
+            <span class="mui-badge">0</span>
           </span>
           <span class="mui-tab-label">购物车</span>
         </router-link>
@@ -45,6 +45,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   /* text-align: center; */
   color: #2c3e50;
-  margin-top: 40px;
+  /* margin-top: 40px; */
+}
+header {
+  padding-top: 40px;
 }
 </style>
