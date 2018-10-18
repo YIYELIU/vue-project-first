@@ -5,7 +5,9 @@
       <mt-header fixed title="黑马程序员.vue项目"></mt-header>
     </header>
     
-    <router-view/>
+    <transition>
+      <router-view></router-view>
+    </transition>
 
     <footer>
       <nav class="mui-bar mui-bar-tab">
@@ -45,9 +47,22 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   /* text-align: center; */
   color: #2c3e50;
-  /* margin-top: 40px; */
+  margin-top: 40px;
+  overflow-x: hidden; 
 }
-header {
-  padding-top: 40px;
+
+.v-enter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+.v-leave-to { 
+  opacity: 0;
+  transform: translateX(-100%);
+  position: absolute;
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: all 0.5s ease;
 }
 </style>
